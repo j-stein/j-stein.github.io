@@ -1,30 +1,42 @@
-Agency Jekyll theme
-====================
+# brume
 
-Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
+I am not a designer so I cannot impress you with breathtaking Jekyll themes, but brume is something that just came to my mind and I had to build it. It is a clean and simple theme, which has an index page that lists all your blog posts divided by year and an about page. brume uses redcarpet as the Markdown processor with strikethrough extension enabled by default (so you can use ~~ to strike out words).
 
-# How to use
+This is how the "Home" page looks like.
 
-###Portfolio 
+![Home](https://dl.dropboxusercontent.com/u/9924988/Screen%20Shot%202014-02-26%20at%2018.48.57.png)
 
-Portfolio projects are in '/_posts'
+And this is a single post.
 
-Images are in '/img/portfolio'
+![Home](https://dl.dropboxusercontent.com/u/9924988/Screen%20Shot%202014-04-06%20at%2012.56.08.png)
 
-###About
+## Usage
 
-Images are in '/img/about/'
+**Important:** The latest version of brume uses `site.baseurl` for links, therefore, if you want to put your site in a subdirectory, update the *_config.yml* file!
 
-###Team
+- Download the ZIP file and extract it's contents.
+- Open *_config.yml* file and enter your site's URL and add additional configuration or update the existing one if needed.
+- Open *_data/brume.yml* file and fill in values for site name (site title), author (your name) and description (blog description). This file contains all the custom information about your page. You can access it using `site.data.brume` object.
+- Open *about/index.md* file and add information about you or your site. You can delete this file and directory if not needed.
+- Open *_data/links.yml* and add additional links or update the existing ones that you want to be displayed in the navigation menu.
+- If you don't want to use CC BY-NC 4.0 licence for the content, then you should change the footer text, which is located in *_layouts/default.html*.
+- Generate your site and be happy!
 
-Team members and info are in '_config.yml'
+### Jekyll < 2.0.0
 
-Images are in '/img/team/'
+I try to keep brume up to date with the newest Jekyll version. Jekyll 2.0.0 introduced a lot of changes (like a built in Sass support) that are not backward compatible, therefore I have created a separate branch `legacy` for those, who might be using an older Jekyll version. All the changes that I introduce in `master` will be ported to `legacy`.
 
+## Theme customization
 
-# Demo
+This theme has 4 predefined colors that can be used for links:
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+- azul
+- ruby
+- amber
+- avocado
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+![Color Examples](https://dl.dropboxusercontent.com/u/9924988/colors_new.png)
+
+By default it uses *azure*, but if you want to select another one just change the second class of `container` div in *_layouts/default.html* to one of the provided names.
+
+Express your thoughts about brume on Twitter [@aigarsdz](http://twitter.com/aigarsdz), and help me make it better!
