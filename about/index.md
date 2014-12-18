@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-Nothing yet :(
+About Page, lacated in about/index.md

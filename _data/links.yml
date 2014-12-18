@@ -3,3 +3,12 @@
 
 - url: /about
   title: About
+
+- url: /student
+  title: Student Articles
+
+- url: /blog
+  title: Blog
+
+- url: /prose
+  title: Prose
